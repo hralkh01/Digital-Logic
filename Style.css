@@ -1,1 +1,20 @@
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    padding-top:50px;
+}
 
+input{
+    width:50px;
+    text-align:center;
+}
+
+button{
+    background:orange;
+    color:black;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+}
