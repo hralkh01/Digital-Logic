@@ -3,16 +3,24 @@ function calculate() {
     let a = Number(document.getElementById("a").value);
     let b = Number(document.getElementById("b").value);
 
-    let andGate = a && b ? 1 : 0;
-    let orGate = a || b ? 1 : 0;
-    let xorGate = a !== b ? 1 : 0;
-
     document.getElementById("andResult").innerHTML =
-        "AND: " + andGate;
+        "AND: " + ((a && b) ? 1 : 0);
 
     document.getElementById("orResult").innerHTML =
-        "OR: " + orGate;
+        "OR: " + ((a || b) ? 1 : 0);
 
     document.getElementById("xorResult").innerHTML =
-        "XOR: " + xorGate;
+        "XOR: " + ((a !== b) ? 1 : 0);
+
+    document.getElementById("notResult").innerHTML =
+        "NOT A: " + (a ? 0 : 1);
+
+    document.getElementById("nandResult").innerHTML =
+        "NAND: " + (!(a && b) ? 1 : 0);
+
+    document.getElementById("norResult").innerHTML =
+        "NOR: " + (!(a || b) ? 1 : 0);
+
+    document.getElementById("xnorResult").innerHTML =
+        "XNOR: " + ((a === b) ? 1 : 0);
 }
