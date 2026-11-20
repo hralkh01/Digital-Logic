@@ -1,5 +1,0 @@
-<button onclick="generateTruthTable()">
-Generate Truth Table
-</button>
-
-<div id="truthTable"></div>
