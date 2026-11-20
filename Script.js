@@ -24,3 +24,44 @@ function calculate() {
     document.getElementById("xnorResult").innerHTML =
         "XNOR: " + ((a === b) ? 1 : 0);
 }
+function generateTruthTable() {
+
+    let output =
+    `
+    <table border="1">
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>AND</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+
+    </table>
+    `;
+
+    document.getElementById("truthTable").innerHTML =
+        output;
+}
