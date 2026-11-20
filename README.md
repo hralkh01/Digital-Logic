@@ -1,19 +1,19 @@
 # Digital-Logic
 A web based digital logic platform where we can design, simulate and analyze circuits.
 
-Features 
+Features:
 logic gates 
 Truth tables
 Boolean algebra 
 Karnaugh maps
 Circuit design.
 
-Tech
+Tech:
 HTML
 CSS
 JavaScript
 
-More Tech
+More Features:
 Flip Flops
 Registers
 Counters
