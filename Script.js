@@ -77,28 +77,3 @@ function generateTruthTable() {
     document.getElementById("truthTable").innerHTML =
         output;
 }
-function evaluateExpression(){
-
-    let expression =
-        document.getElementById("expression").value;
-
-    try{
-
-        let result = eval(expression);
-
-        document.getElementById(
-            "expressionResult"
-        ).innerHTML =
-        "Result: " +
-        (result ? 1 : 0);
-
-    }
-
-    catch{
-
-        document.getElementById(
-            "expressionResult"
-        ).innerHTML =
-        "Invalid Expression";
-    }
-}
